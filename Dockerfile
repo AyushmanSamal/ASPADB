@@ -8,4 +8,4 @@ COPY . .
 RUN pip install -r requirements.txt
 # This command basically executes your main file with Python.
 CMD ["python", "ASPADB.py"]
-EXPOSE 80/tcp
+EXPOSE
