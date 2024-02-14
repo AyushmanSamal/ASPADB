@@ -24,8 +24,9 @@ async def on_message(message):
                 await message.delete()
                 await message.channel.send(f'{message.author.mention} has used a bad word. Kindly take an action on them.')
 
-
-bot.run("MTA5NjgwMzc4MjE0ODUwNTc4Mg.Gycplu.q82lgDJbhFhn5TJuLH_Csn5-wXqoU1C7ccVGZ4")
+with open("secret.txt") as txt:
+    for j in txt:
+        bot.run(j)
 
 @app.route('/')
 def home():
